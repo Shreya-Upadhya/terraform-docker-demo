@@ -32,7 +32,7 @@ you run "terraform init" in the future.
 
 Terraform has been successfully initialized!
 
-### Step 2: Plan Infrastructure
+**### Step 2: Plan Infrastructure**
 bash
 $ terraform plan
 
