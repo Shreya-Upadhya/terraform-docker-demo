@@ -31,9 +31,10 @@ so that Terraform can guarantee to make the same selections by default when
 you run "terraform init" in the future.
 
 Terraform has been successfully initialized!
+```bash
 
-**### Step 2: Plan Infrastructure**
-bash
+### Step 2: Plan Infrastructure
+```bash
 $ terraform plan
 
  Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the
@@ -98,9 +99,10 @@ Terraform will perform the following actions:
     }
 
 Plan: 2 to add, 0 to change, 0 to destroy.
+```bash
 
 ### Step 3: Apply Configuration
-bash
+```bash
 $ terraform apply 
 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the
 following symbols:
