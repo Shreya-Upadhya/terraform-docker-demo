@@ -32,9 +32,9 @@ you run "terraform init" in the future.
 
 Terraform has been successfully initialized!
 
-
+```  
 ### **Step 2: Plan Infrastructure**
-
+```  
 $ terraform plan
 
  Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the
@@ -99,7 +99,7 @@ Terraform will perform the following actions:
     }
 
 Plan: 2 to add, 0 to change, 0 to destroy.
-```bash
+```  
 
 ### Step 3: Apply Configuration
 ```bash
@@ -187,9 +187,9 @@ docker_container.web: Creating...
 docker_container.web: Creation complete after 2s [id=91b0d6236d575e6e686a4372b0b2861b4d48f3fdc10c43f903e70f1edfb1ae9a]
 
 Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
-
+```  
 ### Step 4: Verify Deployment
-bash
+```  bash
 $ docker ps
 CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS          PORTS                  NAMES
 91b0d6236d57   5aca99593157   "/docker-entrypoint.…"   41 seconds ago   Up 40 seconds   0.0.0.0:8080->80/tcp   terraform-nginx-demo
@@ -269,12 +269,13 @@ resource "docker_container" "web" {
         protocol = "tcp"
     }
 }
+```  
 ### Step 5: Access Application
 Open browser → http://localhost:8080
 <img width="855" height="711" alt="2026-06-03" src="https://github.com/user-attachments/assets/54bb344e-3fe3-4eea-b97c-a8e2767500aa" />
 
-Step 6: Destroy Infrastructure
-bash
+### Step 6: Destroy Infrastructure
+```  
 $ terraform destroy
 docker_image.nginx: Refreshing state... [id=sha256:5aca99593157f4ae539a5dec1092a0ad8762f8e2eb1789085a13a0f5622369f6nginx:latest]
 docker_container.web: Refreshing state... [id=c9f168917afc5a30dd68d587608ea0b600253f19092c05544099bf23e0e232dd]
