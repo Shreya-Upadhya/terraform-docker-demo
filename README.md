@@ -32,7 +32,7 @@ you run "terraform init" in the future.
 
 Terraform has been successfully initialized!
 
-Step 2: Plan Infrastructure
+### Step 2: Plan Infrastructure
 bash
 $ terraform plan
 
@@ -99,7 +99,7 @@ Terraform will perform the following actions:
 
 Plan: 2 to add, 0 to change, 0 to destroy.
 
-Step 3: Apply Configuration
+### Step 3: Apply Configuration
 bash
 $ terraform apply 
 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the
@@ -186,7 +186,7 @@ docker_container.web: Creation complete after 2s [id=91b0d6236d575e6e686a4372b0b
 
 Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 
-Step 4: Verify Deployment
+### Step 4: Verify Deployment
 bash
 $ docker ps
 CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS          PORTS                  NAMES
@@ -267,7 +267,7 @@ resource "docker_container" "web" {
         protocol = "tcp"
     }
 }
-Step 5: Access Application
+### Step 5: Access Application
 Open browser → http://localhost:8080
 <img width="855" height="711" alt="2026-06-03" src="https://github.com/user-attachments/assets/54bb344e-3fe3-4eea-b97c-a8e2767500aa" />
 
