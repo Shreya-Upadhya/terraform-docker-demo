@@ -12,7 +12,7 @@ Provision a local Docker container using Terraform (Infrastructure as Code).
 ## 🚀 Terraform Workflow Executed
 
 ### Step 1: Initialize Terraform
-
+```bash
 $ terraform init
 Initializing provider plugins found in the configuration...
 - Finding kreuzwerker/docker versions matching "~> 3.0.2"...
