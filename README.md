@@ -12,7 +12,7 @@ Provision a local Docker container using Terraform (Infrastructure as Code).
 ## 🚀 Terraform Workflow Executed
 
 ### Step 1: Initialize Terraform
-```bash
+
 $ terraform init
 Initializing provider plugins found in the configuration...
 - Finding kreuzwerker/docker versions matching "~> 3.0.2"...
@@ -31,10 +31,10 @@ so that Terraform can guarantee to make the same selections by default when
 you run "terraform init" in the future.
 
 Terraform has been successfully initialized!
-```bash
 
-### Step 2: Plan Infrastructure
-```bash
+
+### **Step 2: Plan Infrastructure**
+
 $ terraform plan
 
  Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the
